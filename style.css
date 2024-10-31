@@ -110,3 +110,9 @@ h5 {
   align-items: center;
   color: blue;
 }
+
+.seven-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 30px;
+}
