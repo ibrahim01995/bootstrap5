@@ -22,6 +22,7 @@
   padding: 50px;
   display: grid;
   grid-template-columns: auto auto;
+  margin: 40px;
 }
 
 .card-button {
@@ -41,6 +42,7 @@
 
 .third-body h2 {
   color: blue;
+  margin: 20px;
 }
 
 .card-container button {
@@ -80,7 +82,7 @@ h5 {
 }
 
 .fourt-body {
-  margin: 20px;
+  margin: 50px;
 
 }
 
@@ -92,7 +94,7 @@ h5 {
 }
 
 .six-body {
-  margin: 20px;
+  margin: 50px;
 }
 
 .card-inner p {
@@ -118,53 +120,74 @@ h5 {
   color: blue;
 }
 
+/* Basic styling */
 .seven-body {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.seven-body h1 {
-  font-size: x-large;
+.seven-body-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
-.seven-body img {
-  margin-top: 80px;
-}
-
-.inner-card1 {
-  height: 203px;
-  width: 552px;
-  border: 1px solid rgb(168, 166, 166);
-  margin-bottom: 10px;
-
-
-}
-
-.inner-card2 {
-  height: 76px;
-  width: 552px;
-  border: 1px solid rgb(168, 166, 166);
-  margin-bottom: 5px;
-  justify-content: center;
-  align-items: center;
-}
-
-.inner-card3 {
-  height: 76px;
-  width: 552px;
-  border: 1px solid rgb(168, 166, 166);
-  margin-bottom: 5px;
-}
-
+.inner-card1,
+.inner-card2,
+.inner-card3,
 .inner-card4 {
-  height: 76px;
-  width: 552px;
-  border: 1px solid rgb(168, 166, 166);
-  margin-bottom: 5px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.seven-body-inner p {
-  justify-content: center;
-  align-items: center;
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .seven-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seven-body-inner {
+    width: 100%;
+  }
+
+  .inner-card1,
+  .inner-card2,
+  .inner-card3,
+  .inner-card4 {
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .inner-card1 h1,
+  .inner-card2,
+  .inner-card3,
+  .inner-card4 {
+    font-size: 1rem;
+  }
+
+  .inner-card1 p {
+    font-size: 0.9rem;
+  }
 }
