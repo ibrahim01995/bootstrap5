@@ -1,3 +1,10 @@
+.container {
+  height: auto;
+  width: 1440px;
+
+}
+
+
 .carousel-inner button {
   background-color: white;
   color: blue;
@@ -115,4 +122,49 @@ h5 {
   display: grid;
   grid-template-columns: auto auto;
   margin: 30px;
+}
+
+.seven-body h1 {
+  font-size: x-large;
+}
+
+.seven-body img {
+  margin-top: 80px;
+}
+
+.inner-card1 {
+  height: 203px;
+  width: 552px;
+  border: 1px solid rgb(168, 166, 166);
+  margin-bottom: 10px;
+
+
+}
+
+.inner-card2 {
+  height: 76px;
+  width: 552px;
+  border: 1px solid rgb(168, 166, 166);
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-card3 {
+  height: 76px;
+  width: 552px;
+  border: 1px solid rgb(168, 166, 166);
+  margin-bottom: 5px;
+}
+
+.inner-card4 {
+  height: 76px;
+  width: 552px;
+  border: 1px solid rgb(168, 166, 166);
+  margin-bottom: 5px;
+}
+
+.seven-body-inner p {
+  justify-content: center;
+  align-items: center;
 }
