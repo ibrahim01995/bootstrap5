@@ -124,7 +124,7 @@ h5 {
 .seven-body {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 50px;
 }
 
 .seven-body-inner {
@@ -146,12 +146,17 @@ h5 {
 .image-container {
   flex: 1;
   text-align: center;
+  margin: 20px;
 }
 
 .image-container img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.footer-part {
+  margin: 50px;
 }
 
 /* Mobile responsiveness */
